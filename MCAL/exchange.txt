@@ -1,0 +1,2 @@
+E: I think channelId should be const char* instead of UINT8
+![img](https://raw.githubusercontent.com/anhtuanhoanghuy/ECU_Project/main/image/20250802-181441.png)
