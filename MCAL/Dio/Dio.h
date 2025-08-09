@@ -6,6 +6,6 @@
 #include "csv_io.h"
 
 void Dio_Init(void);
-void Dio_WriteChannel(uint8_t channelId, int level);
+void Dio_WriteChannel(uint8_t channelId, int direction);
 
 #endif

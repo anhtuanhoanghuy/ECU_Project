@@ -6,7 +6,8 @@ INCLUDE_DIRS = \
     -I./MCAL/Adc \
     -I./MCAL/Can \
     -I./MCAL/Dio \
-    -I./MCAL/Pwm
+    -I./MCAL/Pwm \
+    -I./IOHWAB
 
 # Danh sách các file nguồn
 SOURCES_DIR = \
@@ -15,7 +16,7 @@ SOURCES_DIR = \
     MCAL/Adc \
     MCAL/Can \
     MCAL/Dio \
-    MCAL/Pwm
+    IOHWAB
 
 SOURCES = $(foreach dir, $(SOURCES_DIR), $(wildcard $(dir)/*.c))
 OBJECTS = $(SOURCES:.c=.o)

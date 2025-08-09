@@ -16,11 +16,11 @@ void Dio_Init(void){
 /***********************************************
  * Function: Dio_WriteChannel
  * Description: set motor direction
- * Parameters: uint8 channelId, uint8 level
+ * Parameters: uint8 channelId, uint8 direction
  * Returns: void
  * Author: hoanghuyanhtuan
  * Date: 2025-08-02 17:06:09
  ***********************************************/
-void Dio_WriteChannel(uint8_t channelId, int level){
-    csv_setInt("direction", level);
+void Dio_WriteChannel(uint8_t channelId, int direction){
+    csv_setInt("direction", direction);
 }

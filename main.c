@@ -14,19 +14,11 @@ enum {
     channel_2    
 };
 
+float temperature = 0;
+uint16_t temp_ADC = 0;
 int main() {
     char* file = "UI/data.csv";
-    csv_init(file);
-    csv_setInt("temp",10);
-    Dio_Init();
-    Dio_WriteChannel(channel_0,REAR);
-    Pwm_Init();
-    Pwm_SetDutyCycle(channel_0,50);
-    Adc_Init();
-    int torque = Adc_ReadChannel("torque");
-    printf("Torque=%d",torque);
-    Can_Init();
-    const char* can = Can_Receive("can",0,0);
-    printf("CAN:%s",can);
+    IoHwAb_ReadTemp(&temp_ADC, &temperature);
+    printf("TEMP: %f",temperature);
     return 0;
 }
