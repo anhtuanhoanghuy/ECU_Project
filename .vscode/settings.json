@@ -4,6 +4,7 @@
         "type_traits": "c",
         "utility": "c",
         "stdio.h": "c",
-        "csv_io.h": "c"
+        "csv_io.h": "c",
+        "pdur.h": "c"
     }
 }

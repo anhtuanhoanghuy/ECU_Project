@@ -3,11 +3,7 @@
 
 #include <stdio.h>
 #include <stdint.h>
-
-typedef enum {
-    E_NOT_OK,
-    E_OK
-} Std_ReturnType;
+#include "type.h"
 
 Std_ReturnType IoHwAb_ReadTemp(uint16_t* temp_adc, float* temp_C);
 
