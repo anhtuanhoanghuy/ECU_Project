@@ -100,7 +100,7 @@ void csv_setInt(const char* key, int value) {
 const char* csv_getString(const char* key) {
     csv_file = fopen(csv_filename, "r");
     if (csv_file != NULL) {
-        char line[100];
+        static char line[100];
         while(fgets(line, sizeof(line),csv_file) != NULL) {
             char* line_key = strtok(line,",");
             char* value_str = strtok(NULL, ",\n\r");

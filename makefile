@@ -16,6 +16,7 @@ SOURCES_DIR = \
     MCAL/Adc \
     MCAL/Can \
     MCAL/Dio \
+    MCAL/Pwm \
     IOHWAB
 
 SOURCES = $(foreach dir, $(SOURCES_DIR), $(wildcard $(dir)/*.c))

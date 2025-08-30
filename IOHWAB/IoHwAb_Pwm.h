@@ -9,7 +9,7 @@ typedef enum {
     E_OK
 } Std_ReturnType;
 
-Std_ReturnType IoHwAb_SetDutyCycle(uint16_t channelId, uint8_t duty);
+Std_ReturnType IoHwAb_SetDutyCycle(uint8_t channelId, uint8_t duty);
 
 Std_ReturnType IoHwAb_ReadRpm(uint16_t *rpm);
 

@@ -22,5 +22,5 @@ void Adc_Init(void){
  * Date: 2025-08-02 17:25:38
  ***********************************************/
 uint16_t Adc_ReadChannel(const char* channelId){
-    csv_getInt(channelId);
+    return csv_getInt(channelId);
 }

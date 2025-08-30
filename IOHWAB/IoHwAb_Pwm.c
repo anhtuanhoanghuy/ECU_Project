@@ -10,7 +10,7 @@
  * Author: hoanghuyanhtuan
  * Date: 2025-08-09 17:06:09
  ***********************************************/
-Std_ReturnType IoHwAb_SetDutyCycle(uint8_t channelId , uint8_t duty){
+Std_ReturnType IoHwAb_SetDutyCycle(uint8_t channelId, uint8_t duty){
     Pwm_SetDutyCycle(channelId,duty);
     return E_OK;
 }

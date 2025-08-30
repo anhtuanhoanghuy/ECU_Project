@@ -14,11 +14,15 @@ enum {
     channel_2    
 };
 
-float temperature = 0;
-uint16_t temp_ADC = 0;
+uint32_t canId;
+uint8_t data[8];
+uint8_t dlc;
 int main() {
     char* file = "UI/data.csv";
-    IoHwAb_ReadTemp(&temp_ADC, &temperature);
-    printf("TEMP: %f",temperature);
+    csv_init(file);
+    Can_Receive(&canId, data, &dlc);
+    printf("CanId: %x\n",canId);
+    printf("data: %s\n",data);
+    printf("dlc: %d\n",dlc);
     return 0;
 }
